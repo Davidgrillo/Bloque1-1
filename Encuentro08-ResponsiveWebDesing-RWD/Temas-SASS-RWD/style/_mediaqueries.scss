@@ -1,0 +1,49 @@
+/*
+Ancho de 1200px y alto 1000px
+@media screen and (min-width: 1200px) and (max-height:1000px){
+*/
+
+/*Ancho desde 1200px*/
+@media screen and (min-width: 1200px){
+    header{
+        h1{
+            color: #ff0000;
+        }
+    }
+}
+
+//ancho hasta 500px
+@media screen and (max-width: 500px){
+    header{
+        height: 100px;
+        .logo{
+            float: none;
+            display: inline-block;
+        }
+        h1{
+            float: none;
+            display: inline-block;
+            line-height: 0;
+            color:#48ff00;
+        }
+        nav{
+            float: none;
+            li{
+                padding-left: 0;
+                line-height: 40px;
+            }
+        }
+    }
+    main{
+        padding-top: 100px;
+        .articleContainer{
+            .articuloIzquierdo{
+                float: unset;
+                width: 100%;
+            }
+            .articuloDerecho{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+#formulario{
+    font-size: 20px;
+}
+
+#art-uno > p{
+    color: rgb(25, 124, 5);
+}
+
+div>p{
+    font-family: 'Balsamiq Sans', cursive;
+}
+ul {
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif")
+  }
+  

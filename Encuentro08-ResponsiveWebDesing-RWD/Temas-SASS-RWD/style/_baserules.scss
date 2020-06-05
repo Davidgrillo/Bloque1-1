@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+%light{
+    background-color: $bg; 
+    color: $color;
+}
+%dark{
+    background-color: $bg-dark; 
+    color: $color-dark;
+}
+%red{
+    background-color: $bg-red; 
+    color: $color-red;
+}
+%green{
+    background-color: $bg-green; 
+    color: $color-green;
+}

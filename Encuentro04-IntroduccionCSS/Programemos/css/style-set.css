@@ -1,0 +1,14 @@
+body{
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+nav{
+    border-bottom: 2px solid blueviolet;
+}
+h2{
+    color: #f00
+}
+form{
+    border-radius: 5px;
+    border:2px solid rgb(31, 179, 237);
+}

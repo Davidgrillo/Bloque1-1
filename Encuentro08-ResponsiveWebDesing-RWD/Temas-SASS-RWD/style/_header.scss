@@ -1,0 +1,59 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 5px 30px;
+    border-bottom: 2px solid $primary-gradient;
+    &.light{@extend %light;}
+    &.dark{@extend %dark;}
+    &.red{@extend %red;}
+    &.green{@extend %green;}
+    .logo { 
+        float: left;
+    }
+    h1 {
+        float: left;
+        margin-left: 10px;
+        line-height: 60px;
+    }
+    nav {
+        float: right;
+        li {
+            display: inline;
+            padding-left: 10px;
+            list-style: none;
+            line-height: 60px;
+            &:hover {
+                color: $primary-gradient;
+                transition: all 1s ease;
+            }
+            &.light{
+                color:$color;
+            }
+        }
+    }
+    #btn-tema{
+        height: 25px;
+        width: 111px;
+        cursor: pointer;
+        border: solid 1px;
+        margin-bottom: 3px;
+        &.light{@extend %light;}
+        &.dark{@extend %dark;}
+        &.red{@extend %red;}
+        &.green{@extend %green;}
+    }
+    #panel-tema{
+        button{
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            &#light{background-color: $bg;}
+            &#dark{background-color: $bg-dark;}
+            &#red{background-color: $bg-red;}
+            &#green{background-color: $bg-green;}
+        }
+    }
+}
