@@ -1,0 +1,8 @@
+$border-color: #000;
+$borde-linea:solid 1px $border-color;
+$bg:#969696;
+$bg-aside:#dd0505;
+%bordes{
+    border: $borde-linea;
+    margin: 1px;
+}

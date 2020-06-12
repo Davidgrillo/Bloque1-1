@@ -1,0 +1,72 @@
+@media screen and (max-width: 1000px) {
+    aside {
+      width: 120px;
+    }
+    main {
+      width: calc( 100% - 120px);
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    main{
+        background-color: $bg;
+        font-size: 18px;
+        section{
+            article {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                padding-bottom: 40px;
+                img{
+                    margin: 0 0 20px;
+                }
+                &:nth-child(2n){
+                    img{
+                        order: unset;
+                        margin-left: 0;
+                    }
+                }
+            }
+        } 
+    }
+    aside{
+        /*display: none;*/
+        background-color: $bg-aside;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*este selector es igual a 
+    header nav ul li*/
+    header{
+        nav{
+            ul{
+                li{
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    header nav ul li:last-child {
+      padding: 0;
+    }
+    aside {
+      padding: 10px 40px;
+      width: 100%;
+      /*order: 2;*/
+      border-right: unset;
+      border-top: 2px solid $border-color;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        li {
+            padding: 10px;
+        }
+      }
+    }
+    main {
+      width: 100%;
+    }
+}
